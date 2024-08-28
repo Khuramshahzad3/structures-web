@@ -1,0 +1,130 @@
+const Data = [
+  {
+    id: 1,
+    Service: "Web Development ",
+    routes:"/webdev",
+    Price: "20,000/-",
+  },
+  {
+    id: 2,
+    Service: "SHOPIFY ",
+    routes:"/shopify",
+    Price: "20,000/-",
+  },
+  {
+    id: 3,
+    Service: "WORDPRESS DEVELOPMENT ",
+    routes:"/wordpressdev",
+    Price: "20,000/-",
+  },
+  {
+    id: 4,
+    Service: "FREELANCING ",
+    routes:"/freelancing",
+    Price: "15,000/-",
+  },
+  {
+    id: 5,
+    Service: "CONTENT WRITING ",
+    routes:"/contentwriting",
+    Price: "10,000/-",
+  },
+  {
+    id: 6,
+    Service: "MICROSOFT OFFICE (BASIC IT)",
+    routes:"/msoffice",
+    Price: "18,000/-",
+  },
+  {
+    id: 7,
+    Service: "CYBER SECURITY",
+    routes:"/cybersecurity",
+    Price: "25,000/-",
+  },
+  {
+    id: 8,
+    Service: "ARTIFICIAL INTELLIGENCE",
+    routes:"/ai",
+    Price: "30,000/-",
+  },
+
+  {
+    id: 9,
+    Service: "Machine Learning",
+    routes:"/machinnelearing",
+    Price: "25,000/-",
+  },
+  {
+    id: 10,
+    Service: "SOFTWARE DEVELOPMENT",
+    routes:"/softwaredevelopment",
+    Price: "25,000/-",
+  },
+  {
+    id: 11,
+    Service: "MOBILE APP DEVELOPMENT",
+    routes:"/mobileappdevelopment",
+    Price: "25,000/-",
+  },
+  {
+    id: 12,
+    Service: "CANVA DESIGN",
+    routes:"/canvadesign",
+    Price: "11,000/-",
+  },
+  {
+    id: 13,
+    Service: "VIDEO EDITING",
+    routes:"/videoediting",
+    Price: "18,000/-",
+  },
+  {
+    id: 14,
+    Service: "UI/UX DESIGNING",
+    routes:"/ui/uxdesigning",
+    Price: "20,000/-",
+  },
+  {
+    id: 15,
+    Service: "GRAPHIC DESIGNING",
+    routes:"/graphicdesigning",
+    Price: "22,000/-",
+  },
+  {
+    id: 16,
+    Service: "Motion Graphic",
+    routes:"/motiongraphic",
+    Price: "20,000/-",
+  },
+  {
+    id: 17,
+    Service: "SOCIAL MEDIA MARKETING",
+    routes:"/socialmediamarketing",
+    Price: "22,000/-",
+  },
+  {
+    id: 18,
+    Service: "English Spoken",
+    routes:"/englishspoken",
+    Price: "15,000/-",
+  },
+  {
+    id: 19,
+    Service: "SEO",
+    routes:"/seo",
+    Price: "21,000/-",
+  },
+  {
+    id: 20,
+    Service: "Data Science",
+    routes:"/datascience",
+    Price: "15,000/-",
+  },
+  {
+    id: 21,
+    Service: "Animation",
+    routes:"/animation",
+    Price: "30,000/-",
+  },
+];
+export default Data;
