@@ -42,8 +42,8 @@ const Navbar = () => {
         <div className="bg-white relative z-50">
             <div className="drop-shadow-2xl mx-auto sm:px-16  lg:flex lg:items-center lg:justify-between  py-0 px-6 ">
                 <div className="flex justify-between items-center ">
-                <img  className="uppercase font-bold      cursor-pointer w-[80%] md:w-[50%] lg:w-[80%] xl:w-[90%] py-2" src={logo} onClick={navigate}/>
-                    <div className="text-3xl   text-[#002E40]" onClick={() => setOpen(!open)}>
+                    <img className="uppercase font-bold      cursor-pointer w-[80%] md:w-[50%] lg:w-[80%] xl:w-[90%] py-2" src={logo} onClick={navigate} />
+                    <div className="text-3xl lg:hidden  text-[#002E40]" onClick={() => setOpen(!open)}>
                         <FontAwesomeIcon icon={open ? faXmark : faBars} />
                     </div>
                 </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                         </div>
                     </ul>
                 </div>
-                
+
 
             </div>
         </div>
