@@ -6,20 +6,22 @@ import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import ContactUs from './Components/ContactUs/ContactUs'
-import About from './Components/AboutUs/About'
+import Coursespage from './Components/CoursesPages/Coursespage'
 import ServicePage from './Components/ServicesPages/ServicePage'
+import AboutPage from './Components/AboutUs/Aboutpage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contactus" element={<ContactUs/>} />
-        <Route path="/aboutus" element={<About/>} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/services" element={<ServicePage/>} />
+        <Route path="/courses" element={<Coursespage />} />
+        <Route path="/aboutus" element={<AboutPage />} />
       </Routes>
 
 

@@ -29,7 +29,7 @@ const Navbar = () => {
             routes: "/aboutus",
         },
         {
-            name: "ContactUs",
+            name: "Contact",
             routes: "/contactus",
         },
     ];
@@ -108,7 +108,7 @@ const Navbar = () => {
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="border-2 rounded-2xl font-Poppins border-gray-300 px-4 py-2"
+                                className="border-2 rounded-2xl font-Poppins border-[#809320]  px-4 py-2 max-sm:w-[70%]"
                             />
                         </div>
                     </ul>
