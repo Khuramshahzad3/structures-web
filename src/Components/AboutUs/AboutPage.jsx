@@ -3,7 +3,7 @@ import About1 from '../../assets/About.jpg'
 import AboutDetails from './AboutDetails'
 import Section3 from '../Home/Section3'
 
-const AboutPage = () => {
+const Aboutpage = () => {
     return (
         <div className=''>
             <div className="">
@@ -17,4 +17,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default Aboutpage

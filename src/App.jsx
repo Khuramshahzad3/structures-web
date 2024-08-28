@@ -8,7 +8,7 @@ import Home from './Components/Home/Home'
 import ContactUs from './Components/ContactUs/ContactUs'
 import Coursespage from './Components/CoursesPages/Coursespage'
 import ServicePage from './Components/ServicesPages/ServicePage'
-import AboutPage from './Components/AboutUs/Aboutpage'
+import Aboutpage from './Components/AboutUs/Aboutpage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +21,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/services" element={<ServicePage/>} />
         <Route path="/courses" element={<Coursespage />} />
-        <Route path="/aboutus" element={<AboutPage />} />
+        <Route path="/aboutus" element={<Aboutpage />} />
       </Routes>
 
 
