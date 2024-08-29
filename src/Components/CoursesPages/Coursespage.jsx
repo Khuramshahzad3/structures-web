@@ -1,12 +1,12 @@
 import React from 'react'
-import Page from '../ServicesPages/Page'
 import Section3 from '../Home/Section3'
+import PageDetails from './PageDetails'
 
 
 const Coursespage = () => {
     return (
         <div>
-            <Page title='our courses' />
+            <PageDetails title='our courses' />
             <Section3/>
         </div>
     )

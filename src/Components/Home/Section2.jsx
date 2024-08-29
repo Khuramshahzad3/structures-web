@@ -14,10 +14,13 @@ const Section2 = () => {
                     <div className="md:flex  md:flex-row md:gap-5 lg:gap-20 xl:gap-32"  >
                         <div className="">
                             <h1 className="font-bold md:text-3xl xl:text-[3vw]" data-aos="fade-right" >Services</h1>
-                            <p className="md:text-lg md:w-[260px] xl:w-[300px] 2xl:w-[450px] 3xl:w-[550px] xl:text-[2vw] xl:leading-[30px] 2xl:leading-normal lg:mt-2 xl:mt-4" data-aos="fade-right">
+                            <p className="md:text-lg md:w-[260px] xl:w-[300px] 2xl:w-[450px] 3xl:w-[550px]  xl:leading-[30px] 2xl:leading-normal xl:text-[1.5vw] lg:mt-2 xl:mt-4" data-aos="fade-right">
                                 Empowering our global clientele to embrace modern technology,
                                 rethink processes, and elevate experiences. Empowering our global clientele to embrace modern technology,
                                 rethink processes, and elevate experiences.
+                                Empowering our global clientele to embrace modern technology,
+                                rethink processes, and elevate experiences. Empowering our global clientele to embrace modern technology,
+                                rethink
                                 Empowering our global clientele to embrace modern technology,
                                 rethink processes, and elevate experiences. Empowering our global clientele to embrace modern technology,
                                 rethink

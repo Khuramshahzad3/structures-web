@@ -4,12 +4,21 @@ const Progressbar = () => {
   const completion = UseReadingProgress();
 
   return (
-    <div>
-      <span
-        style={{ transform: `translateX(${completion - 100}%)` }}
-        className="absolute bg-yellow-400 h-1.5   w-full top-[4.2rem] lg:top-[6.2rem] left-0 z-10"
-      />
+    <div className="">
+      <div className="fixed top-0 w-full text-center bg-green-800 text-white z-10">
+      
+        <div className="w-full h-[5px] bg-gray-200">
+          <div
+            className="h-[5px] bg-orange-600"
+            style={{ width: `${completion}%` }}
+          ></div>
+        </div>
+      </div>
+
+  
+
     </div>
+
   );
 };
 

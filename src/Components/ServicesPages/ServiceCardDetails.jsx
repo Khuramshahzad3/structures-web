@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard';
 
 import Data from '../../assets/data';
 
-// Sample data
+
 
 
 const ServiceCardDetails = () => {

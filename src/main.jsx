@@ -6,7 +6,7 @@ import Progressbar from './Components/Navbar/Progressbar.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Progressbar/> */}
+    <Progressbar/>
     <App />
   </StrictMode>,
 )
