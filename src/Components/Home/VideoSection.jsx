@@ -19,7 +19,9 @@ const VideoSection = () => {
             <source src={VideoHome} type="video/mp4" className='' />
           </video>
         </div>
-        <div className="absolute flex flex-col gap-4 items-center lg:gap-10 justify-center max-md:top-32 md:top-60 lg:top-[25rem]"  data-aos="fade-up">
+        <div className="absolute  flex flex-col gap-4 items-center lg:gap-10 justify-center  xs:top-32 sm:top-48  md:top-60 lg:top-[25rem]"  
+        data-aos="fade-up"
+        >
 
           <h1 className="text-white max-lg:text-xl lg:text-4xl xl:text-5xl">Your next starts right here</h1>
           <Button2 text="join us" />

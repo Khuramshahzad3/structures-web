@@ -15,7 +15,6 @@ const Home = () => {
       <FeaturePage />
       <VideoSection />
       <Section3 />
-            <Slider/> 
     </div>
   )
 }
