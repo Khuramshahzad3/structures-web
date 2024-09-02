@@ -1,0 +1,15 @@
+/* Style the entire scrollbar track */
+.swiper-scrollbar {
+    background-color: #16191b !important; /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
+    height: 8px; 
+    /* Adjust the height */
+    
+}
+
+/* Style the draggable scrollbar thumb */
+.swiper-scrollbar-drag {
+    /* width: 70px; */
+    background-color: white !important; /* White scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
