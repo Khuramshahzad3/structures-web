@@ -28,6 +28,7 @@ const Slider = () => {
               className="h-[365.297px] w-[210px] sm:w-[448px] sm:h-[365.297px] mb-20  m-auto relative rounded-sm group"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
+              data-aos="fade-up"
             >
               <video
                 className="w-full h-full object-cover sm:object-fill transition-transform duration-500 ease-in-out transform group-hover:scale-[110%] group-hover:blur-[2px] opacity-55"
@@ -49,7 +50,7 @@ const Slider = () => {
                   } text-center ${
                     isHovered ? "animate__animated animate__backInRight" : ""
                   } `}
-                  data-aos="fade-up"
+                  
                 >
                   {card.description}
                 </p>
