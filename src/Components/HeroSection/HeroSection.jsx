@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
-import v1 from "../../assets/v1.mp4";
+import v3 from "../../assets/v3.mp4";
+import v4 from "../../assets/v4.mp4";
+import v5 from "../../assets/v5.mp4";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -27,7 +29,7 @@ const HeroSection = () => {
           onSlideChange={handleSlideChange}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           autoplay={{
-            delay: 2500,
+            delay: 5500,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -45,7 +47,7 @@ const HeroSection = () => {
                   autoPlay={true}
                   className="z-10 opacity-30 w-screen"
                 >
-                  <source src={v1} type="video/mp4" />
+                  <source src={v3} type="video/mp4" />
                 </video>
               </div>
               <div className="flex flex-col  items-center justify-center">
@@ -77,7 +79,7 @@ const HeroSection = () => {
                   autoPlay={true}
                   className="z-10 opacity-30 w-screen"
                 >
-                  <source src={v1} type="video/mp4" />
+                  <source src={v4} type="video/mp4" />
                 </video>
               </div>
               <div className="flex flex-col  items-center justify-center">
@@ -109,7 +111,7 @@ const HeroSection = () => {
                   autoPlay={true}
                   className="z-10 opacity-30 w-screen"
                 >
-                  <source src={v1} type="video/mp4" />
+                  <source src={v5} type="video/mp4" />
                 </video>
               </div>
               <div className="flex flex-col  items-center justify-center">
