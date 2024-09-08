@@ -113,7 +113,7 @@ function Footer() {
             <form className="flex gap-5 items-center "     onSubmit={handleSubmit}>
               <input
                 type="email"
-                className="p-3 max-w-2xl w-[30%] focus:outline-slate-500 border-2 border-slate-400 rounded-lg"
+                className="p-3 max-w-2xl w-full sm:w-[30%] focus:outline-slate-500 border-2 border-slate-400 rounded-lg"
                 placeholder="Enter email here"
                 required
               />

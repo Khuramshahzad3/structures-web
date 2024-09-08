@@ -10,16 +10,16 @@ const VideoSection = () => {
     <div>
       <div className="flex flex-col items-center justify-center relative my-10 mb-20">
 
-        <div className="bg-black ">
+        <div className="bg-black max-sm:h-[500px]">
           <video
             muted="muted"
             autoPlay={true}
-            className='opacity-70 w-screen '
+            className='opacity-70 w-screen h-full object-fill'
           >
             <source src={VideoHome} type="video/mp4" className='' />
           </video>
         </div>
-        <div className="absolute  flex flex-col gap-4 items-center lg:gap-10 justify-center  xs:top-32 sm:top-48  md:top-60 lg:top-[25rem]"  
+        <div className="absolute  flex flex-col gap-4 items-center lg:gap-10 justify-center  top-80 sm:top-48  md:top-60 lg:top-[25rem]"  
         data-aos="fade-up"
         >
 

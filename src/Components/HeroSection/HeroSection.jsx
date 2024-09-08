@@ -37,11 +37,11 @@ const HeroSection = () => {
             prevEl: ".prev",
             clickable: true,
           }}
-          modules={[Navigation, Autoplay]}
+          // modules={[Navigation, Autoplay]}
         >
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black ">
+              <div className="bg-black max-sm:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   <source src={v3} type="video/mp4" />
                 </video>
               </div>
-              <div className="flex flex-col  items-center justify-center">
+              <div className="flex flex-col  items-center  justify-center">
                 <h1 className="text-white font-Poppins z-[150] absolute top-[2rem] md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg m-auto">
                   We Reimagine Tomorrow
                 </h1>
@@ -73,11 +73,11 @@ const HeroSection = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black">
+              <div className="bg-black max-sm:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
-                  className="z-10 opacity-30 w-screen"
+                  className="z-10 opacity-30 h-full object-fill w-screen"
                 >
                   <source src={v4} type="video/mp4" />
                 </video>
@@ -105,11 +105,11 @@ const HeroSection = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black">
+              <div className="bg-black max-sm:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
-                  className="z-10 opacity-30 w-screen"
+                  className="z-10 opacity-30 h-full object-fill w-screen"
                 >
                   <source src={v5} type="video/mp4" />
                 </video>
