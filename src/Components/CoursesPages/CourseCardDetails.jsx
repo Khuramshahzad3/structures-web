@@ -11,7 +11,6 @@ const CourseCardDetails = () => {
                         key={index}
                         image={course.image}
                         title={course.Service}
-                        //   oldPrice={course.oldPrice}
                         newPrice={course.Price}
                     />
                 ))}
