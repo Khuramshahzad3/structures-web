@@ -14,7 +14,7 @@ function Footer() {
         <div className="container mx-auto max-w-[1170px] px-6">
           <div className="flex flex-col md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-4 justify-between text-gray-800">
             <div className="w-full   mb-8 md:mb-0">
-              <h4 className="text-xl  relative mb-9 text-black font-semibold">
+              <h4 className="text-lg  relative mb-9 text-black font-semibold">
                 About Us
                 <span className="absolute left-0 bottom-[-10px] w-2/3 h-[2px] bg-[#002E40]"></span>
               </h4>
@@ -30,7 +30,7 @@ function Footer() {
             </div>
 
             <div className="w-full  lg:ml-20 mb-8 md:mb-0">
-              <h4 className="text-xl relative mb-9 font-semibold  text-black">
+              <h4 className="text-lg relative mb-9 font-semibold  text-black">
                 Navigations
                 <span className="absolute left-0 bottom-[-10px] w-1/2 h-[2px] bg-[#002E40]"></span>
               </h4>
@@ -84,7 +84,7 @@ function Footer() {
             </div>
 
             <div className="w-full   mb-8 md:mb-0">
-              <h4 className="text-xl font-semibold  text-black relative mb-9">
+              <h4 className="text-lg font-semibold  text-black relative mb-9">
                 Working Hours
                 <span className="absolute left-0 bottom-[-10px] w-1/2 h-[2px] bg-[#002E40]"></span>
               </h4>
@@ -95,7 +95,7 @@ function Footer() {
             </div>
 
             <div className="w-full  mb-8 md:mb-0">
-              <h4 className="text-xl font-semibold  text-black relative mb-9">
+              <h4 className="text-lg font-semibold  text-black relative mb-9">
                 Get in Touch
                 <span className="absolute left-0 bottom-[-10px] w-1/2 h-[2px] bg-[#002E40]"></span>
               </h4>

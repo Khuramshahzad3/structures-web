@@ -1,16 +1,20 @@
 import React, { useRef, useState } from "react";
+import {Link} from "react-router-dom"
 import { SwiperSlide, Swiper } from "swiper/react";
 import v3 from "../../assets/v3.mp4";
 import v4 from "../../assets/v4.mp4";
 import v5 from "../../assets/v5.mp4";
+import "./HeroStyles.css"
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import SwiperCore from "swiper";
 import "animate.css";
 const HeroSection = () => {
+  SwiperCore.use([Navigation]);
   const [isHovered, setIsHovered] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const swiperRef = useRef(null);
@@ -26,18 +30,19 @@ const HeroSection = () => {
           // centeredSlides={true}
           // slidesPerView={slidesPerView}
           // loop={true}
-          onSlideChange={handleSlideChange}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          // onSlideChange={handleSlideChange}
+          // onSwiper={(swiper) => (swiperRef.current = swiper)}
           autoplay={{
             delay: 5500,
             disableOnInteraction: false,
           }}
-          navigation={{
-            nextEl: ".swiper-next",
-            prevEl: ".prev",
-            clickable: true,
-          }}
-          // modules={[Navigation, Autoplay]}
+          // navigation={{
+          //   nextEl: ".swiper-next",
+          //   prevEl: ".prev",
+          //   clickable: true,
+          // }}
+          modules={[ Autoplay]}
+          navigation
         >
           <SwiperSlide>
             <div className="  ">
@@ -45,28 +50,28 @@ const HeroSection = () => {
                 <video
                   muted="muted"
                   autoPlay={true}
-                  className="z-10 opacity-30 object-cover w-full h-full 2xl:w-screen"
+                  className="z-10 opacity-40 object-cover w-full h-full 2xl:w-screen"
                 >
                   <source src={v3} type="video/mp4" />
                 </video>
               </div>
-              <div className="flex flex-col  items-center  justify-center">
-                <h1 className="text-white font-Poppins z-[150] absolute top-[2rem] md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg m-auto">
+              <div className="flex flex-col absolute top-32  items-center  justify-center sm:top-20 md:left-[4vw] lg:left-[6vw] lg:top-32 xl:left-[4vw] 2xl:left-[6vw] mx-auto 3xl:top-80">
+                <h1 className="text-white font-Poppins z-[150]   md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg mx-auto">
                   We Reimagine Tomorrow
                 </h1>
-                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw] md:top-[15vw] absolute top-[3.5rem] leading-[6vw] md:text-[2vw] xl:text-[2.2vw] xl:top-[14.7vw] text-[2.2vw] m-auto text-center">
+                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw]  leading-[6vw] md:text-[2vw] xl:text-[2.2vw] xl:top-[14.7vw] text-[2.2vw] m-auto text-center text-sm xs:px-20">
                   {" "}
                   Driving growth and molding the future through transformative
                   change
                 </p>
                 <div
-                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-[18vw] md:mt-[22vw] absolute rounded-lg text-center cursor-pointer hover:text-white hover:bg-black hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c] top-32 hover:border-2  font-light ${
+                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-10 md:mt-20 absolute rounded-md text-center cursor-pointer hover:text-white xl:mt-[16vw] hover:bg-black hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c] top-32 hover:border-2  font-light ${
                     isHovered ? "animate__animated animate__pulse" : ""
                   }`}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <p className=" text-center sm:text-xl"> Get in Touch</p>
+                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
                 </div>
               </div>
             </div>
@@ -77,28 +82,28 @@ const HeroSection = () => {
                 <video
                   muted="muted"
                   autoPlay={true}
-                  className="z-10 opacity-30 h-full object-fill w-screen"
+                  className="z-10 opacity-60 object-cover w-full h-full 2xl:w-screen"
                 >
                   <source src={v4} type="video/mp4" />
                 </video>
               </div>
-              <div className="flex flex-col  items-center justify-center">
-                <h1 className="text-white font-Poppins z-[150] absolute top-[2rem] md:top-[6vw] text-center  text-[4vw] md:text-[3vw] m-auto">
+              <div className="flex flex-col absolute top-32  items-center  justify-center sm:top-20 md:left-[4vw] lg:left-[6vw] lg:top-32 xl:left-[4vw] 2xl:left-[6vw] mx-auto 3xl:top-80">
+                <h1 className="text-white font-Poppins z-[150]   md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg mx-auto">
                   We Reimagine Tomorrow
                 </h1>
-                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw] md:top-[10vw] absolute top-[3.5rem] leading-[6vw] xl:top-[14.7vw] md:text-[3vw] text-[4vw] xl:text-[2.2vw] m-auto text-center">
+                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw]  leading-[6vw] md:text-[2vw] xl:text-[2.2vw] xl:top-[14.7vw] text-[2.2vw] m-auto text-center text-sm xs:px-20">
                   {" "}
                   Driving growth and molding the future through transformative
                   change
                 </p>
                 <div
-                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-[18vw] md:mt-[22vw] absolute rounded-lg text-center cursor-pointer hover:text-white hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c] hover:bg-black top-32 hover:border-2 hover:border-white font-light ${
+                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-10 md:mt-20 absolute rounded-md text-center cursor-pointer hover:text-white xl:mt-[16vw] hover:bg-black hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c] top-32 hover:border-2  font-light ${
                     isHovered ? "animate__animated animate__pulse" : ""
                   }`}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <p className=" text-center sm:text-xl"> Get in Touch</p>
+                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
                 </div>
               </div>
             </div>
@@ -109,52 +114,35 @@ const HeroSection = () => {
                 <video
                   muted="muted"
                   autoPlay={true}
-                  className="z-10 opacity-30 h-full object-fill w-screen"
+                  className="z-10 opacity-60 object-cover w-full h-full 2xl:w-screen"
                 >
                   <source src={v5} type="video/mp4" />
                 </video>
               </div>
-              <div className="flex flex-col  items-center justify-center">
-                <h1 className="text-white font-Poppins z-[150] absolute top-[2rem] md:top-[6vw] text-center  text-[4vw] md:text-[3vw] m-auto">
+              <div className="flex flex-col absolute top-32  items-center  justify-center sm:top-20 md:left-[4vw] lg:left-[6vw] lg:top-32 xl:left-[4vw] 2xl:left-[6vw] mx-auto 3xl:top-80">
+                <h1 className="text-white font-Poppins z-[150]   md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg mx-auto">
                   We Reimagine Tomorrow
                 </h1>
-                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw] md:top-[10vw] absolute top-[3.5rem] leading-[6vw] xl:top-[14.7vw] md:text-[3vw] text-[4vw] xl:text-[2.2vw] m-auto text-center">
+                <p className="text-white px-4 font-Poppins z-[150] xs:mt-[4vw]  leading-[6vw] md:text-[2vw] xl:text-[2.2vw] xl:top-[14.7vw] text-[2.2vw] m-auto text-center text-sm xs:px-20">
                   {" "}
                   Driving growth and molding the future through transformative
                   change
                 </p>
                 <div
-                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-[18vw] md:mt-[22vw] absolute rounded-lg text-center cursor-pointer hover:text-white hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c]  hover:bg-black top-32 hover:border-2 hover:border-white font-light ${
+                  className={`bg-white w-[150px]  h-[30px] sm:w-[230px] flex items-center justify-center sm:h-[50px] z-[150] xs:mt-[14vw] sm:mt-10 md:mt-20 absolute rounded-md text-center cursor-pointer hover:text-white xl:mt-[16vw] hover:bg-black hover:bg-gradient-to-r hover:from-black hover:to-[#1b1e2c] top-32 hover:border-2  font-light ${
                     isHovered ? "animate__animated animate__pulse" : ""
                   }`}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <p className=" text-center sm:text-xl"> Get in Touch</p>
+                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <div className="flex  items-center justify-center ">
-            <div className="prev cursor-pointer ">
-              <FontAwesomeIcon
-                icon={faChevronLeft}
-                className={`text-white absolute top-[20vw] left-[4vw] text-[6vw] lg:text-[4vw] z-[170] ${
-                  currentIndex === 0 ? "opacity-40 pointer-events-none" : ""
-                }`}
-              />
-            </div>
-            <div className="swiper-next cursor-pointer ">
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className={`text-white absolute top-[20vw] left-[92vw] text-[6vw] lg:text-[4vw] z-[180]  ${
-                  currentIndex === swiperRef.current?.slides.length - 1
-                    ? "opacity-40 pointer-events-none"
-                    : ""
-                }`}
-              />
-            </div>
-          </div>
+          
+         
+         
         </Swiper>
       </div>
     </div>
