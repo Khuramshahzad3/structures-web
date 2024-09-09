@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { SwiperSlide, Swiper } from "swiper/react";
 import v3 from "../../assets/v3.mp4";
 import v4 from "../../assets/v4.mp4";
 import v5 from "../../assets/v5.mp4";
-import "./HeroStyles.css"
+import "./HeroStyles.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -41,12 +41,12 @@ const HeroSection = () => {
           //   prevEl: ".prev",
           //   clickable: true,
           // }}
-          modules={[ Autoplay]}
+          modules={[Autoplay]}
           navigation
         >
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black max-sm:h-[500px]">
+              <div className="bg-black max-md:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
@@ -71,14 +71,20 @@ const HeroSection = () => {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
+                  <Link
+                    to={"/contactus"}
+                    className=" text-center text-sm sm:text-xl"
+                  >
+                    {" "}
+                    Get in Touch
+                  </Link>
                 </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black max-sm:h-[500px]">
+              <div className="bg-black max-md:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
@@ -103,14 +109,20 @@ const HeroSection = () => {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
+                  <Link
+                    to={"/contactus"}
+                    className=" text-center text-sm sm:text-xl"
+                  >
+                    {" "}
+                    Get in Touch
+                  </Link>
                 </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="  ">
-              <div className="bg-black max-sm:h-[500px]">
+              <div className="bg-black max-md:h-[500px]">
                 <video
                   muted="muted"
                   autoPlay={true}
@@ -135,14 +147,17 @@ const HeroSection = () => {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <Link to={"/contactus"} className=" text-center text-sm sm:text-xl"> Get in Touch</Link>
+                  <Link
+                    to={"/contactus"}
+                    className=" text-center text-sm sm:text-xl"
+                  >
+                    {" "}
+                    Get in Touch
+                  </Link>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          
-         
-         
         </Swiper>
       </div>
     </div>

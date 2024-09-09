@@ -40,17 +40,19 @@ const Navbar = () => {
   };
 
   return (
-    <div className="  mx-auto">
-      <div className="relative z-50">
-        <div className=" mx-auto sm:px-16  lg:flex lg:items-center lg:justify-between  py-0 px-6 ">
-          <div className="flex justify-between items-center ">
+    <div className=" ">
+      <div className="absolute  z-50     mx-auto  ">
+        <div className=" mx-auto  sm:px-16  lg:flex lg:items-center lg:justify-between   px-6 ">
+          <div className="flex justify-between items-center md:gap-60">
             <img
-              className="uppercase font-bold      cursor-pointer w-[80%] md:w-[50%] lg:w-[80%] xl:w-[90%] py-2"
+              className="uppercase font-bold  text-white    cursor-pointer w-[80%] md:w-[50%] lg:w-[80%] xl:w-[90%] py-2"
               src={logo}
               onClick={navigate}
             />
             <div
-              className="text-3xl lg:hidden  text-[#002E40]"
+              className="text-3xl lg:hidden 
+               text-white
+               "
               onClick={() => setOpen(!open)}
             >
               <FontAwesomeIcon icon={open ? faXmark : faBars} />
@@ -62,7 +64,7 @@ const Navbar = () => {
                 <li key={index} className="relative group ">
                   <Link
                     to={link.routes}
-                    className="flex items-center font-Poppins text-[#002E40] hover:text-[#809320]"
+                    className="flex items-center font-Poppins text-white hover:text-[#809320]"
                   >
                     {link.name}
                     {/* {(index === 1 || index === 2) && (

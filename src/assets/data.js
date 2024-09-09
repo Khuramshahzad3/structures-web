@@ -1,152 +1,173 @@
-import Service from '../assets/services.jpg'
+import MADImage from "../assets/MADImage.jpg";
+import WebImage from "../assets/WebImage.jpg";
+import ShopifyImage from "../assets/ShopifyImage.jpg";
+import FreeImage from "../assets/FreeImage.jpg";
+import CanvaImage from "../assets/CanvaImage.png";
+import CreativeImage from "../assets/CreativeImage.jpg";
+import MSOImage from "../assets/MSOImage.jpg";
+import CSImage from "../assets/CSImage.jpg";
+import AIImage from "../assets/AIImage.jpg";
+import MLImage from "../assets/MLImage.jpg";
+import SDImage from "../assets/SDImage.jpg";
+import WordPImage from "../assets/WordPImage.jpg";
+import VEImage from "../assets/VEImage.jpg";
+import UxImage from "../assets/UxImage.jpg";
+import GDImage from "../assets/GDImage.jpg";
+import MDImage from "../assets/MDImage.webp";
+import EnglishImage from "../assets/EnglishImage.webp";
+import AnimationImage from "../assets/AnimationImage.jpg";
+import SEOImage from "../assets/SEOImage.jpg";
+import SMMImage from "../assets/SMMImage.png";
+import DSImage from "../assets/DSImage.jpeg";
+
 const Data = [
   {
     id: 1,
     Service: "Web Development ",
-    image:Service,
-    routes:"/webdev",
+    image: WebImage,
+    routes: "/webdev",
     Price: "20,000/-",
   },
   {
     id: 2,
     Service: "SHOPIFY ",
-    
-    image:Service,
-    routes:"/shopify",
+
+    image: ShopifyImage,
+    routes: "/shopify",
     Price: "20,000/-",
   },
   {
     id: 3,
     Service: "WORDPRESS DEVELOPMENT ",
-        image:Service,
-    routes:"/wordpressdev",
+    image: WordPImage,
+    routes: "/wordpressdev",
     Price: "20,000/-",
   },
   {
     id: 4,
     Service: "FREELANCING ",
-    image:Service,
-    routes:"/freelancing",
+    image: FreeImage,
+    routes: "/freelancing",
     Price: "15,000/-",
   },
   {
     id: 5,
     Service: "CONTENT WRITING ",
-    image:Service,
-    routes:"/contentwriting",
+    image: CreativeImage,
+    routes: "/contentwriting",
     Price: "10,000/-",
   },
   {
     id: 6,
     Service: "MICROSOFT OFFICE (BASIC IT)",
-    image:Service,
-    routes:"/msoffice",
+    image: MSOImage,
+    routes: "/msoffice",
     Price: "18,000/-",
   },
   {
     id: 7,
     Service: "CYBER SECURITY",
-    image:Service,
-    routes:"/cybersecurity",
+    image: CSImage,
+    routes: "/cybersecurity",
     Price: "25,000/-",
   },
   {
     id: 8,
     Service: "ARTIFICIAL INTELLIGENCE",
-    image:Service,
-    routes:"/ai",
+    image: AIImage,
+    routes: "/ai",
     Price: "30,000/-",
   },
 
   {
     id: 9,
     Service: "Machine Learning",
-    image:Service,
-    routes:"/machinnelearing",
+    image: MLImage,
+    routes: "/machinnelearing",
     Price: "25,000/-",
   },
   {
     id: 10,
     Service: "SOFTWARE DEVELOPMENT",
-    image:Service,
-    routes:"/softwaredevelopment",
+    image: SDImage,
+    routes: "/softwaredevelopment",
     Price: "25,000/-",
   },
   {
     id: 11,
     Service: "MOBILE APP DEVELOPMENT",
-    image:Service,
-    routes:"/mobileappdevelopment",
+    image: MADImage,
+    routes: "/mobileappdevelopment",
     Price: "25,000/-",
   },
   {
     id: 12,
     Service: "CANVA DESIGN",
-    image:Service,
-    routes:"/canvadesign",
+    image: CanvaImage,
+    routes: "/canvadesign",
     Price: "11,000/-",
   },
   {
     id: 13,
     Service: "VIDEO EDITING",
-    image:Service,
-    routes:"/videoediting",
+    image: VEImage,
+    routes: "/videoediting",
     Price: "18,000/-",
   },
   {
     id: 14,
     Service: "UI/UX DESIGNING",
-    image:Service,
-    routes:"/ui/uxdesigning",
+    image: UxImage,
+    routes: "/ui/uxdesigning",
     Price: "20,000/-",
   },
   {
     id: 15,
     Service: "GRAPHIC DESIGNING",
-    image:Service,
-    routes:"/graphicdesigning",
+    image: GDImage,
+    routes: "/graphicdesigning",
     Price: "22,000/-",
   },
   {
     id: 16,
     Service: "Motion Graphic",
-    image:Service,
-    routes:"/motiongraphic",
+    image: MDImage,
+    routes: "/motiongraphic",
     Price: "20,000/-",
   },
   {
     id: 17,
     Service: "SOCIAL MEDIA MARKETING",
-    image:Service,
-    routes:"/socialmediamarketing",
+    image: SMMImage,
+    routes: "/socialmediamarketing",
     Price: "22,000/-",
   },
   {
     id: 18,
     Service: "English Spoken",
-    image:Service,
-    routes:"/englishspoken",
+    image: EnglishImage,
+    routes: "/englishspoken",
     Price: "15,000/-",
   },
   {
     id: 19,
     Service: "SEO",
-    image:Service,
-    routes:"/seo",
+    image: SEOImage,
+    routes: "/seo",
     Price: "21,000/-",
   },
   {
     id: 20,
     Service: "Data Science",
-    image:Service,
-    routes:"/datascience",
+    image: DSImage,
+    routes: "/datascience",
     Price: "15,000/-",
   },
   {
     id: 21,
     Service: "Animation",
-    image:Service,
-    routes:"/animation",
+    image: AnimationImage,
+    routes: "/animation",
     Price: "30,000/-",
   },
 ];

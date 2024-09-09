@@ -6,12 +6,12 @@ const Button = (props) => {
     return (
         <div>
             <div
-                className={`w-[200px] h-[50px] flex items-center lg:w-[290px] 2xl:w-[320px] 3xl:w-[380px] 2xl:h-[70px] justify-center rounded-md bg-[#262B3F] hover:bg-gradient-to-r hover:from-black hover:to-[#262B3F] ${isHovered ? "animate__animated animate__pulse" : ""
+                className={`w-[180px] h-[50px] flex items-center lg:w-[200px]   3xl:w-[250px]  justify-center rounded-md bg-[#262B3F] hover:bg-gradient-to-r hover:from-black hover:to-[#262B3F] ${isHovered ? "animate__animated animate__pulse" : ""
                     }`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <Link to="/contactus" className="uppercase 2xl:text-[1.2vw] text-white">
+                <Link to="/contactus" className="uppercase text-sm text-white 3xl:text-xl">
                     {props.text}
                 </Link>
             </div>
