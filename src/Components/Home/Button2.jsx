@@ -6,7 +6,7 @@ const Button = (props) => {
     return (
         <div>
             <div
-                className={`w-[120px] h-[50px] flex items-center lg:w-[150px] 2xl:w-[170px]  2xl:h-[80px] justify-center rounded-md bg-transparent border-2 border-white hover:bg-gradient-to-r hover:from-black hover:to-[#262B3F] ${isHovered ? "animate__animated animate__pulse" : ""
+                className={`w-[90px] h-[40px] flex items-center lg:w-[150px] 2xl:w-[170px]  2xl:h-[80px] justify-center rounded-md bg-transparent border-2 border-white hover:bg-gradient-to-r hover:from-black hover:to-[#262B3F] ${isHovered ? "animate__animated animate__pulse" : ""
                     }`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}

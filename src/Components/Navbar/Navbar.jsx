@@ -103,11 +103,13 @@ const Navbar = () => {
           >
             {Menu.map((link, index) => (
               <li key={index} className="relative group">
-                <Link to={link.routes} className="flex items-center">
+                <Link to={link.routes} className="flex items-center"  onClick={() => setOpen(!open)}>
                   {link.name}
                   {/* {(index === 1 || index === 2) && (
                                         <FontAwesomeIcon icon={faCaretDown} className="ml-2 group-hover:rotate-180" />
                                     )} */}
+                   
+
                 </Link>
                 {/* {(index === 1 || index === 2) && (
                                     <ul className="absolute hidden group-hover:block bg-blue-600 shadow-lg rounded-lg top-32 py-2  max-h-80 overflow-y-auto w-56    ">
