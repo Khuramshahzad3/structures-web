@@ -9,7 +9,7 @@ const AboutDetails = () => {
   return (
     <div>
       <div className=" ">
-        <div className="flex flex-col justify-center container max-w-[1600px] items-center m-auto p-6 my-10 2xl:py-20">
+        <div className="flex flex-col justify-center container max-w-[1600px] items-center m-auto p-6 my-10 lg:px-32 2xl:py-20">
           <div className="font-Poppins xl:text-lg 2xl:text-xl">
             <h1 className="uppercase font-bold" data-aos="fade-right">
               about us

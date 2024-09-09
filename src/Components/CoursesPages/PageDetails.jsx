@@ -5,15 +5,15 @@ import v3 from "../../assets/v3.mp4";
 const PageDetails = (props) => {
   return (
     <div>
-      <div className="bg-black ">
-        <video
-          muted="muted"
-          autoPlay={true}
-          className="z-10 opacity-30 w-screen"
-        >
-          <source src={v3} type="video/mp4" />
-        </video>
-      </div>
+      <div className="bg-black max-md:h-[500px]">
+                <video
+                  muted="muted"
+                  autoPlay={true}
+                  className="z-10 opacity-60 object-cover w-full h-full 2xl:w-screen"
+                >
+                  <source src={v3} type="video/mp4" />
+                </video>
+              </div>
       <div className="container max-w-[1600px] m-auto">
         <div className=" flex flex-col items-center justify-center">
           <h1 className=" sm:text-[3vw] lg:text-[2vw] font-Poppins uppercase font-semibold my-4">
