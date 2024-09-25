@@ -41,11 +41,11 @@ const Navbar = () => {
 
   return (
     <div className=" ">
-      <div className="absolute  z-50     mx-auto  ">
-        <div className=" mx-auto  sm:px-16  lg:flex lg:items-center lg:justify-between   px-6 ">
+      <div className="absolute  z-50   mx-auto  ">
+        <div className="  sm:px-16  lg:flex lg:items-center lg:justify-between p-3  px-6 ">
           <div className="flex justify-between items-center md:gap-60">
             <img
-              className="uppercase font-bold  text-white    cursor-pointer w-[80%] md:w-[50%] lg:w-[80%] xl:w-[90%] py-2"
+              className="uppercase font-bold  text-white    cursor-pointer w-[50%] md:w-[50%] lg:w-[80%] xl:w-[75%] py-2"
               src={logo}
               onClick={navigate}
             />
@@ -67,21 +67,9 @@ const Navbar = () => {
                     className="flex items-center font-Poppins text-white hover:text-[#809320]"
                   >
                     {link.name}
-                    {/* {(index === 1 || index === 2) && (
-                                        <FontAwesomeIcon icon={faCaretDown} className="ml-2 group-hover:rotate-180" />
-                                    )} */}
+                    
                   </Link>
-                  {/* {(index === 1 || index === 2) && (
-                                    <ul className="bg-white p-4 absolute     top-full hidden max-h-64 overflow-y-auto group-hover:block shadow-lg rounded-lg w-[30vw] ">
-                                        {Data.map((links, index2) => (
-                                            <li key={index2} className="px-4 py-2 hover:bg-gray-100">
-                                                <Link to={`${link.routes}${links.routes}`}>
-                                                    {links.Service}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )} */}
+                  
                 </li>
               ))}
             </ul>
@@ -97,18 +85,17 @@ const Navbar = () => {
         {/* mobile nav */}
         <div className=" relative   z-10  ">
           <ul
-            className={`lg:hidden w-[90vw] xs:w-[70vw] pl-10 flex bg-white rounded-xl flex-col absolute justify-between gap-5 py-10 duration-500 text-[#002E40] font-Poppins  ${
-              open ? "left-0 " : "left-[-100%]"
-            }`}
+            className={`lg:hidden w-[90vw] xs:w-[70vw] pl-10 flex bg-white rounded-xl flex-col absolute justify-between gap-5 py-10 duration-500 text-[#002E40] font-Poppins ${open ? "left-0 " : "left-[-100%]"
+              }`}
           >
             {Menu.map((link, index) => (
               <li key={index} className="relative group">
-                <Link to={link.routes} className="flex items-center"  onClick={() => setOpen(!open)}>
+                <Link to={link.routes} className="flex items-center" onClick={() => setOpen(!open)}>
                   {link.name}
                   {/* {(index === 1 || index === 2) && (
                                         <FontAwesomeIcon icon={faCaretDown} className="ml-2 group-hover:rotate-180" />
                                     )} */}
-                   
+
 
                 </Link>
                 {/* {(index === 1 || index === 2) && (

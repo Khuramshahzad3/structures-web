@@ -20,7 +20,6 @@ import SEOImage from "../assets/SEOImage.jpg";
 import SMMImage from "../assets/SMMImage.png";
 import DSImage from "../assets/DSImage.jpeg";
 const CourseData = [
-  
     {
       id: 1,
       Service: "Web Development ",

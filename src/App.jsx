@@ -8,8 +8,11 @@ import Coursespage from "./Components/CoursesPages/Coursespage";
 import ServicePage from "./Components/ServicesPages/ServicePage";
 import Aboutpage from "./Components/AboutUs/AbPage";
 import Footer from "./Components/Footer/Footer";
-
+import CourseInnerDetail from "./Components/CoursesPages/CourseInnerDetail";
+import CourseData from "./assets/CourseData";
+import CourseInerPage from "./Components/CoursesPages/CourseInerPage";
 function App() {
+  const {routes}=CourseData;
   return (
     <BrowserRouter>
       <Navbar />
@@ -19,6 +22,7 @@ function App() {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/courses" element={<Coursespage />} />
         <Route path="/aboutus" element={<Aboutpage />} />
+        <Route path={`/courses/:id`} element={<CourseInerPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

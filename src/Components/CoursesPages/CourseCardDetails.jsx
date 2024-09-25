@@ -12,6 +12,7 @@ const CourseCardDetails = () => {
                         image={course.image}
                         title={course.Service}
                         newPrice={course.Price}
+                        link={course.id}
                     />
                 ))}
             </div>

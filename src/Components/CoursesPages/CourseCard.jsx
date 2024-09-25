@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const CourseCard = (props) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -13,6 +14,7 @@ const CourseCard = (props) => {
   
             <div className="flex items-center justify-between mt-2">
               <span className="text-gray-900 font-bold text-sm">RS {props.newPrice}</span>
+              <Link to={`/courses/${props.link}`}className='font-semibold text-red-800'>View Details</Link>
             </div>
           </div>
         </div>

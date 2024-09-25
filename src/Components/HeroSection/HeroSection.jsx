@@ -32,10 +32,10 @@ const HeroSection = () => {
           // loop={true}
           // onSlideChange={handleSlideChange}
           // onSwiper={(swiper) => (swiperRef.current = swiper)}
-          autoplay={{
-            delay: 5500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 5500,
+          //   disableOnInteraction: false,
+          // }}
           // navigation={{
           //   nextEl: ".swiper-next",
           //   prevEl: ".prev",
@@ -55,7 +55,7 @@ const HeroSection = () => {
                   <source src={v3} type="video/mp4" />
                 </video>
               </div>
-              <div className="flex flex-col absolute top-32  items-center  justify-center sm:top-20 md:left-[4vw] lg:left-[6vw] lg:top-32 xl:left-[4vw] 2xl:left-[6vw] mx-auto 3xl:top-80">
+              <div className="flex flex-col absolute top-32  items-center  justify-center sm:top-20 md:left-[4vw] lg:left-[6vw] lg:top-32 xl:left-[4vw] 2xl:left-[6vw] mx-auto 3xl:top-80 md:top-40">
                 <h1 className="text-white font-Poppins z-[150]   md:top-[12vw] text-center  xl:text-4xl lg:text-2xl text-lg mx-auto">
                   We Reimagine Tomorrow
                 </h1>
