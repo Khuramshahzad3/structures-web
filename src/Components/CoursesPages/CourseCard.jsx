@@ -11,10 +11,9 @@ const CourseCard = (props) => {
           <img src={props.image} alt={props.title} className="w-full h-48 object-cover" />
           <div className="p-4 font-Poppins">
             <h3 className="text-gray-900 font-semibold ">{props.title}</h3>
-  
             <div className="flex items-center justify-between mt-2">
               <span className="text-gray-900 font-bold text-sm">RS {props.newPrice}</span>
-              <Link to={`/courses/${props.link}`}className='font-semibold text-red-800'>View Details</Link>
+              <Link to={`/courses/${props.id}`} className='font-semibold text-red-800'  onClick={()=>{window.scrollTo(0,0)}} >View Details</Link>
             </div>
           </div>
         </div>

@@ -32,10 +32,10 @@ const HeroSection = () => {
           // loop={true}
           // onSlideChange={handleSlideChange}
           // onSwiper={(swiper) => (swiperRef.current = swiper)}
-          // autoplay={{
-          //   delay: 5500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 5500,
+            disableOnInteraction: false,
+          }}
           // navigation={{
           //   nextEl: ".swiper-next",
           //   prevEl: ".prev",
