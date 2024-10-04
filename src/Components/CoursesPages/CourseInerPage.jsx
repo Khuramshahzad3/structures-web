@@ -5,11 +5,9 @@ import CourseData from '../../assets/CourseData'
 import CourseDisplay from './CourseDisplay'
 import { useParams } from 'react-router-dom'
 const CourseInerPage = () => {
-    const { courseid } = useParams();
+    const { routes } = useParams();
 
-    const course = CourseData.find((e) => e.id === Number(courseid))
-
-
+    const course = CourseData.find((e) => e.routes === routes)
     return (
         <div>
             <div className="bg-black max-md:h-[500px]">

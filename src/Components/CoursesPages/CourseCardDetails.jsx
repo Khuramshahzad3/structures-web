@@ -10,9 +10,9 @@ const CourseCardDetails = () => {
                     <CourseCard
                         key={index}
                         image={course.image}
-                        title={course.Service}
+                        title={course.course}
                         newPrice={course.Price}
-                        id={course.id}
+                        routes={course.routes}
                     />
                 ))}
             </div>

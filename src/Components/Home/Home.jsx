@@ -6,11 +6,12 @@ import VideoSection from './VideoSection'
 import FeatureCardDetails from '../FeaturedComponents/FeatureCardDetails'
 import FeaturePage from '../FeaturedComponents/FeaturePage'
 import Slider from '../FeaturedComponents/Slider'
-
+import Ght from './ght'
 const Home = () => {
   return (
     <div>
       <HeroSection />
+      <Ght/>
       <Section2 />
       <FeaturePage />
       <VideoSection />

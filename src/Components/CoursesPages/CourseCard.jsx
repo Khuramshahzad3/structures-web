@@ -13,7 +13,7 @@ const CourseCard = (props) => {
             <h3 className="text-gray-900 font-semibold ">{props.title}</h3>
             <div className="flex items-center justify-between mt-2">
               <span className="text-gray-900 font-bold text-sm">RS {props.newPrice}</span>
-              <Link to={`/courses/${props.id}`} className='font-semibold text-red-800'  onClick={()=>{window.scrollTo(0,0)}} >View Details</Link>
+              <Link to={`/courses/${props.routes}`} className='font-semibold text-red-800'  onClick={()=>{window.scrollTo(0,0)}} >View Details</Link>
             </div>
           </div>
         </div>
